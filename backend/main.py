@@ -3,6 +3,28 @@ from backend.agents.summary_agent import summarize_search_results
 from fastapi import FastAPI
 
 app = FastAPI()
+
+# Add this route for homepage check
+@app.get("/")
+def root():
+    return {"message": "University Bot Backend is Running!"}
+
+# Add this route for health check
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+# (Optional) Example API endpoint for search+summary
+@app.get("/ask")
+def ask(query: str):
+    results = search_google(query)
+    summary = summarize_search_results(query, results)
+    return {
+        "results": results,
+        "summary": summary
+    }
+
+# CLI function can be kept, but will NOT run in cloud deployment
 def main():
     query = input("🔍 Enter your query: ")
     results = search_google(query)
