@@ -119,3 +119,12 @@ def ask_bot(data: QueryInput):
         "summary": summary,
         "sources": results
     }
+
+@app.get("/")
+def root():
+    return {"message": "University Bot Backend is Running!"}
+
+# Add this route for health check
+@app.get("/health")
+def health():
+    return {"status": "ok"}
