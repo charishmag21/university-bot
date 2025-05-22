@@ -1,0 +1,11 @@
+google-generativeai==0.3.2
+requests
+streamlit
+python-dotenv
+beautifulsoup4
+tiktoken             # Still useful for token management
+langchain
+openai==0.28.1
+python-dotenv
+fastapi 
+uvicorn
