@@ -1,0 +1,60 @@
+{
+  "frontend-user-123": [
+    {
+      "role": "user",
+      "content": "What are the admission requirements for Northeastern University Toronto?"
+    },
+    {
+      "role": "assistant",
+      "content": " Hello! I'd be happy to help you understand the admission requirements for Northeastern University Toronto.\n\nFor undergraduate programs, Northeastern University is test-optional, meaning you don't have to submit SAT or ACT scores. However, they will consider your high school grades and the courses you've taken. The middle 50% range SAT score of admitted students is 1480-1540, and the middle 50% range GPA is 4.2-4.5, giving you an idea of the academic rigor.\n\nFor graduate programs, the university requires a minimum IELTS score of 6.5, a TOEFL score of 79, or a PTE score of 53. \n\nPlease note that these are general guidelines and specific programs may have additional requirements. I would recommend checking the specific program's webpage on the Northeastern University Toronto website or contacting their admissions office for the most accurate and up-to-date information.\n\nIs there anything else you'd like to know about Northeastern University Toronto or any other university? I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "Are there any student clubs for international students?"
+    },
+    {
+      "role": "assistant",
+      "content": " Yes, there are many student clubs and organizations at Northeastern University Toronto that cater to international students. These clubs provide a great opportunity for international students to connect with each other, engage in social activities, and get support in their new environment.\n\nSome examples of student clubs for international students include cultural clubs like the Chinese Student and Scholars Association, the Indian Student Association, and the African Students Association. There are also organizations like the International Student Association, which aim to bring together students from all types of backgrounds and promote cultural exchange.\n\nAdditionally, many student clubs offer community service opportunities, which can be a great way for international students to get involved in their local community and make a positive impact.\n\nI would recommend checking out the Northeastern University Toronto student organizations webpage or reaching out to the student affairs office for a list of current student clubs and organizations. They can help you find a club that interests you and connect you with other international students.\n\nIs there anything else you'd like to know about Northeastern University Toronto or any other university? I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "What are the admission requirements?"
+    },
+    {
+      "role": "assistant",
+      "content": " Sure, I'd be happy to help you with the admission requirements!\n\nThe specific admission requirements for Northeastern University Toronto will depend on the program you are applying to, but here are some general requirements:\n\nFor undergraduate programs, Northeastern University is test-optional, meaning you don't have to submit SAT or ACT scores. However, they will consider your high school grades and the courses you've taken. The middle 50% range SAT score of admitted students is 1480-1540, and the middle 50% range GPA is 4.2-4.5, giving you an idea of the academic rigor.\n\nFor graduate programs, the university requires a minimum IELTS score of 6.5, a TOEFL score of 79, or a PTE score of 53.\n\nIn addition to academic requirements, Northeastern University Toronto may also require letters of recommendation, a personal statement, and a resume. Some programs may have additional requirements, such as a portfolios or auditions.\n\nIt's important to note that these are general guidelines, and specific programs may have different or additional requirements. I would recommend checking the specific program's webpage on the Northeastern University Toronto website or contacting their admissions office for the most accurate and up-to-date information.\n\nIs there anything else you'd like to know about Northeastern University Toronto or any other university? I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "Are there any student clubs for international students?"
+    },
+    {
+      "role": "assistant",
+      "content": " Yes, there are many student clubs and organizations at Northeastern University Toronto that cater to international students. These clubs provide a great opportunity for international students to connect with each other, engage in social activities, and get support in their new environment.\n\nSome examples of student clubs for international students include cultural clubs like the Chinese Student and Scholars Association, the Indian Student Association, and the African Students Association. There are also organizations like the International Student Association, which aim to bring together students from all types of backgrounds and promote cultural exchange.\n\nAdditionally, many student clubs offer community service opportunities, which can be a great way for international students to get involved in their local community and make a positive impact.\n\nI would recommend checking out the Northeastern University Toronto student organizations webpage or reaching out to the student affairs office for a list of current student clubs and organizations. They can help you find a club that interests you and connect you with other international students.\n\nIs there anything else you'd like to know about Northeastern University Toronto or any other university? I'm here to help!"
+    },
+    {
+      "role": "user",
+      "content": "subjects available in MPS analytics"
+    },
+    {
+      "role": "assistant",
+      "content": " The Master of Professional Studies in Analytics (MPS Analytics) program at Northeastern University Toronto offers a variety of subjects to help students develop their analytical skills. Here are some of the subjects typically available in the MPS Analytics program:\n\n1. Predictive Analytics\n2. Data Warehousing and SQL\n3. Data Mining Applications\n4. Data Management and Big Data\n5. Advanced Analytics\n6. Analytical Methods for Decision Making\n7. Business Intelligence\n8. Applied Machine Learning\n9. Statistical Modeling\n10. Time Series Analysis\n11. Data Visualization\n12. Project Management in Analytics\n\nThe specific subjects offered may vary from one academic year to another, and it's important to check the program's curriculum on the Northeastern University Toronto website or contact their admissions office for the most up-to-date and accurate information.\n\nIf you have any further questions about the MPS Analytics program or any other program, don't hesitate to ask! I'm here to help."
+    },
+    {
+      "role": "user",
+      "content": "what are the concentrations available in MPS analytics?"
+    },
+    {
+      "role": "assistant",
+      "content": " The Master of Professional Studies in Analytics (MPS Analytics) program at Northeastern University Toronto offers several concentrations to help students focus their studies on specific areas of interest. The available concentrations may vary from year to year, but here are some concentrations that are typically available:\n\n1. Business Analytics: This concentration focuses on using data to inform business decisions, such as forecasting and predicting consumer behavior, optimizing supply chains, and identifying new revenue streams.\n2. Statistical Analysis: This concentration focuses on using statistical methods to analyze data and draw insights. Students learn how to design experiments, conduct surveys, and analyze data to make informed decisions.\n3. Data Science: This concentration focuses on using programming languages, such as Python and R, to analyze data. Students learn how to manipulate and clean data, build predictive models, and visualize data.\n4. Big Data: This concentration focuses on using distributed computing systems, such as Apache Hadoop, to process large datasets. Students learn how to design and manage distributed systems, as well as how to use big data tools, such as Apache Spark, for data analysis.\n\nIt's important to note that the specific concentrations offered may vary from one academic year to another, and it's essential to check the program's curriculum on the Northeastern University Toronto website or contact their admissions office for the most up-to-date and accurate information.\n\nIf you have any further questions about the MPS Analytics program or any other program, please don't hesitate to ask! I'm here to help."
+    },
+    {
+      "role": "user",
+      "content": "do we have any capstone?"
+    },
+    {
+      "role": "assistant",
+      "content": " Yes, the Master of Professional Studies in Analytics (MPS Analytics) program at Northeastern University Toronto includes a capstone project. The capstone project is an opportunity for students to apply the skills and knowledge they've learned throughout the program to a real-world problem. Students typically work in teams and collaborate with industry partners to design, implement, and present a solution to a business challenge. The capstone project is an excellent way for students to gain hands-on experience and build a portfolio of work that they can showcase to potential employers.\n\nIf you have any further questions about the capstone project or the MPS Analytics program, please don't hesitate to ask! I'm here to help."
+    }
+  ]
+}
