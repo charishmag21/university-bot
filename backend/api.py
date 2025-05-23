@@ -66,7 +66,8 @@ from backend.memory.session_memory import get_history, add_message
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://candid-yeot-40275f.netlify.app"],
+    allow_origins=["http://localhost:5173"],
+                #    "https://candid-yeot-40275f.netlify.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
