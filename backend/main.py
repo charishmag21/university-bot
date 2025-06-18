@@ -1,30 +1,69 @@
 from backend.agents.search_agent import search_google
 from backend.agents.summary_agent import summarize_search_results
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Add this route for homepage check
+# Enable CORS for frontend dev/prod
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://candid-yeot-40275f.netlify.app",
+        # Add other frontend URLs as needed
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.get("/")
 def root():
     return {"message": "University Bot Backend is Running!"}
 
-# Add this route for health check
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
-# (Optional) Example API endpoint for search+summary
-@app.get("/ask")
-def ask(query: str):
-    results = search_google(query)
-    summary = summarize_search_results(query, results)
-    return {
-        "results": results,
-        "summary": summary
-    }
+@app.post("/ask")
+async def ask(request: Request):
+    data = await request.json()
+    query = data.get("query", "")
+    university = data.get("university", "")
+    campus = data.get("campus", "")
 
-# CLI function can be kept, but will NOT run in cloud deployment
+    # Compose context-rich query for search and LLM
+    if university and campus:
+        context_query = f"For {university}, campus/city: {campus}, {query}"
+    elif university:
+        context_query = f"For {university}, {query}"
+    elif campus:
+        context_query = f"For campus/city: {campus}, {query}"
+    else:
+        context_query = query
+
+    # Debug: Print what we're doing
+    print("🔍 University:", university)
+    print("🔍 Campus:", campus)
+    print("🔍 Query:", query)
+    print("🔍 Context query sent to search agent:", context_query)
+
+    results = search_google(context_query)
+    print("🔍 Search results returned:", results)
+
+    summary = summarize_search_results(context_query, results)
+
+    # return {
+    #     "results": results,
+    #     "summary": summary
+    # }
+    return {
+    "summary": summary,
+    "sources": results,
+    "results": results
+    }
+# CLI for dev testing (not for production/cloud)
 def main():
     query = input("🔍 Enter your query: ")
     results = search_google(query)

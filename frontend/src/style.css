@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   margin: 0;
@@ -189,4 +190,46 @@ button:disabled {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+.selector-row {
+  display: flex;
+  gap: 16px;
+  margin: 0 32px 18px 32px;
+}
+
+.uni-input, .campus-input {
+  font-size: 1em;
+  background: #faf5f7;
+  border: 1.5px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+}
+
+.campus-dropdown {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: absolute;
+  width: 100%;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 2px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(120, 0, 0, 0.06);
+  list-style: none;
+  padding: 0;
+}
+
+.campus-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f4f4f4;
+}
+.campus-dropdown li:last-child {
+  border-bottom: none;
+}
+.campus-dropdown li:hover {
+  background: #f6d7db;
 }
