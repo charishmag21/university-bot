@@ -1280,3 +1280,49 @@ body, html, #root {
   color: #305490;
   text-decoration: underline;
 }
+/* Make layout stack on small screens */
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+    min-width: 0;
+    width: 100vw;
+  }
+  .sidebar {
+    width: 100vw;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1.5px solid #e4e7ee;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 18px 6vw 12px 6vw;
+  }
+  .sidebar-footer {
+    display: none;
+  }
+}
+
+/* Make chat area and bubbles fit smaller screens */
+@media (max-width: 900px) {
+  .chat-area,
+  .chat-box,
+  .input-row {
+    padding: 0 4vw !important;
+    min-width: 0;
+  }
+  .chat-bubble {
+    max-width: 96vw;
+    font-size: 1em;
+    padding: 14px 10px;
+  }
+}
+
+/* Homepage sections adjust */
+@media (max-width: 900px) {
+  .homepage-features,
+  .homepage-how {
+    padding: 1rem 2vw;
+    min-width: 0;
+    width: 97vw;
+  }
+}
