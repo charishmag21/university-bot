@@ -10,7 +10,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://candid-yeot-40275f.netlify.app",
+        "https://unibotai.netlify.app",
         # Add other frontend URLs as needed
     ],
     allow_credentials=True,
