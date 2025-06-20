@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Chat from "./components/Chat";
+import HomePage from "./components/HomePage";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 import "./style.css";
 
-export default function App() {
+function MainApp({ darkMode, setDarkMode }) {
   const [university, setUniversity] = useState("");
   const [campus, setCampus] = useState("");
   const [sessionId] = useState("frontend-user-123");
-  const [darkMode, setDarkMode] = useState(false);
-
-  // Add a CSS class to the body for dark mode
-  React.useEffect(() => {
-    document.body.className = darkMode ? "dark-mode" : "";
-  }, [darkMode]);
 
   return (
     <div className={`main-layout${darkMode ? " dark" : ""}`}>
@@ -31,5 +29,36 @@ export default function App() {
         darkMode={darkMode}
       />
     </div>
+  );
+}
+
+export default function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.className = darkMode ? "dark-mode" : "";
+  }, [darkMode]);
+
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <HomePage
+              onStart={() => (window.location.href = "/app")}
+              // If you want to route programmatically, you could use useNavigate in HomePage
+            />
+          }
+        />
+        <Route
+          path="/app"
+          element={<MainApp darkMode={darkMode} setDarkMode={setDarkMode} />}
+        />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
