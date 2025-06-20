@@ -47,7 +47,7 @@ export default function Chat({ university, campus, sessionId }) {
 
     try {
     //   const res = await fetch("http://localhost:8000/ask", {
-    const res = await fetch("https://unibotai-1.onrender.com", {
+    const res = await fetch("https://unibotai-1.onrender.com/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
