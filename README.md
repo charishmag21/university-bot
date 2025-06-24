@@ -141,9 +141,11 @@ npm run dev
 - To support more universities, customize prompt templates and search queries.
 
 
-**Live Demo
-Frontend:** [your-frontend.netlify.app](https://unibotai.netlify.app/)
-**Backend:** [your-backend.onrender.com](https://unibotai-1.onrender.com)
+# Live Demo
+
+- **Frontend:** https://unibotai.netlify.app/
+
+- **Backend:** https://unibotai-1.onrender.com
 
 ## Credits
 
