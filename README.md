@@ -1,21 +1,35 @@
-# University Chatbot
+# CampusAI – Your Global University & College Chatbot
 
-A conversational AI chatbot that answers university-related queries (admissions, tuition, co-op, etc.) using real-time web search and LLM summarization.
-
----
-
-## Features
-
-- **Conversational UI**: Modern, chat-based interface (React + Vite)
-- **FastAPI Backend**: Handles queries, runs web search (Serper.dev), and generates answers (OpenAI/Together/Gemini APIs)
-- **Live Search**: Retrieves fresh information from Google
-- **LLM Summarization**: Summarizes search results for accurate, concise responses
-- **Source Citations**: Shows links and snippets for answers
-- **Session/Memory**: (Optional/Planned) Maintains conversational context
+CampusAI is a modern AI-powered chatbot and web app that helps students explore and compare universities and colleges worldwide, get instant answers to academic queries, and discover campuses in any city.  
+Built with a React frontend and a FastAPI backend (deployed to Render.com), CampusAI is easy to deploy, maintain, and extend.
 
 ---
 
-## Project Structure
+## ✨ Features
+
+- 🌏 **Global university & campus/city search** (not limited to Canada!)
+- 🤖 **Conversational AI:** Get instant answers to questions about programs, admissions, scholarships, campus life, and more.
+- 🔍 **Smart autocomplete** for cities/campuses worldwide.
+- 📚 **Source-backed answers:** Key responses include links to official sources.
+- ⚡ **Fast, scalable architecture:** React + FastAPI backend, serverless/cloud-ready.
+- 🖥️ **Seamless user experience:** Modern UI, testimonials, glassmorphism design.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** ReactJS (with functional components & hooks)
+- **Backend:** FastAPI (Python)
+- **Deployment:** 
+  - Frontend: [Netlify](https://netlify.com)
+  - Backend: [Render.com](https://render.com)
+- **Other:** 
+  - GitHub for version control
+  - Google Custom Search API (or similar) for web results
+
+---
+
+## 📂 Project Structure
 
 ```
 university_chatbot/
@@ -43,7 +57,6 @@ university_chatbot/
 └── README.md
 ```
 
----
 
 ## Prerequisites
 
@@ -54,9 +67,16 @@ university_chatbot/
     - [Together.ai](https://platform.together.ai/) **or** [OpenAI](https://platform.openai.com/)
     - [Gemini](https://ai.google.dev/) *(optional)*
 
----
 
-## 1. Backend Setup (FastAPI)
+## 🚀 Quickstart
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/yourusername/university-bot.git
+cd university-bot
+
+### 2. Backend Setup (FastAPI)
 
 ### Install Python dependencies
 
@@ -86,7 +106,6 @@ uvicorn backend.api:app --reload --port 8000
 - The server runs at [http://localhost:8000](http://localhost:8000)
 - API docs at [http://localhost:8000/docs](http://localhost:8000/docs)
 
----
 
 ## 2. Frontend Setup (React + Vite)
 
@@ -97,7 +116,6 @@ npm run dev
 ```
 - The app runs at [http://localhost:5173](http://localhost:5173)
 
----
 
 ## 3. Usage
 
@@ -105,7 +123,6 @@ npm run dev
 - Type your question about any university (e.g., "What is the tuition fee for MPS Analytics at Northeastern University Toronto?")
 - Wait for the bot to respond with an answer and sources.
 
----
 
 ## 4. Troubleshooting
 
@@ -113,7 +130,6 @@ npm run dev
 - **"Failed to fetch response from backend"**: Ensure your backend is running, API keys are valid, and `/ask` endpoint is accessible.
 - **API key errors**: Double-check your `.env` file and API key limits/usage.
 
----
 
 ## 5. Customization & Extending
 
@@ -122,7 +138,9 @@ npm run dev
 - To support more universities, customize prompt templates and search queries.
 
 
----
+**Live Demo
+Frontend:** your-frontend.netlify.app
+**Backend:** your-backend.onrender.com
 
 ## Credits
 
