@@ -3,20 +3,18 @@
 CampusAI is a modern AI-powered chatbot and web app that helps students explore and compare universities and colleges worldwide, get instant answers to academic queries, and discover campuses in any city.  
 Built with a React frontend and a FastAPI backend (deployed to Render.com), CampusAI is easy to deploy, maintain, and extend.
 
----
 
-## ✨ Features
+## Features
 
-- 🌏 **Global university & campus/city search** (not limited to Canada!)
-- 🤖 **Conversational AI:** Get instant answers to questions about programs, admissions, scholarships, campus life, and more.
-- 🔍 **Smart autocomplete** for cities/campuses worldwide.
-- 📚 **Source-backed answers:** Key responses include links to official sources.
-- ⚡ **Fast, scalable architecture:** React + FastAPI backend, serverless/cloud-ready.
-- 🖥️ **Seamless user experience:** Modern UI, testimonials, glassmorphism design.
+-  **Global university & campus/city search** (not limited to Canada!)
+-  **Conversational AI:** Get instant answers to questions about programs, admissions, scholarships, campus life, and more.
+-  **Smart autocomplete** for cities/campuses worldwide.
+-  **Source-backed answers:** Key responses include links to official sources.
+-  **Fast, scalable architecture:** React + FastAPI backend, serverless/cloud-ready.
+-  **Seamless user experience:** Modern UI, testimonials, glassmorphism design.
 
----
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:** ReactJS (with functional components & hooks)
 - **Backend:** FastAPI (Python)
@@ -27,14 +25,12 @@ Built with a React frontend and a FastAPI backend (deployed to Render.com), Camp
   - GitHub for version control
   - Google Custom Search API (or similar) for web results
 
----
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 university_chatbot/
 ├── backend/
-│   ├── api.py
 │   ├── main.py
 │   ├── agents/
 │   │   ├── search_agent.py
@@ -46,7 +42,15 @@ university_chatbot/
 ├── frontend/
 │   ├── public/
 │   │   └── index.html
+|   |   └── cities.json
+|   |   └── university-generic.png
 │   ├── src/
+|   |   └── Components
+|   |         └── Chat.jsx
+|   |         └── HomePage.jsx
+|   |         └── PrivacyPolicy.jsx
+|   |         └── Sidebar.jsx
+|   |         └── TermsOfService.jsx
 │   │   ├── App.jsx
 │   │   ├── index.jsx
 │   │   └── style.css
@@ -68,17 +72,15 @@ university_chatbot/
     - [Gemini](https://ai.google.dev/) *(optional)*
 
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/university-bot.git
+git clone https://github.com/charishmag21/university-bot.git
 cd university-bot
 
-### 2. Backend Setup (FastAPI)
-
-### Install Python dependencies
+### 2. **Backend Setup (FastAPI)**
 
 ```bash
 cd backend
@@ -110,7 +112,7 @@ uvicorn backend.api:app --reload --port 8000
 ## 2. Frontend Setup (React + Vite)
 
 ```bash
-cd frontend
+cd ../frontend
 npm install
 npm run dev
 ```
@@ -139,8 +141,8 @@ npm run dev
 
 
 **Live Demo
-Frontend:** your-frontend.netlify.app
-**Backend:** your-backend.onrender.com
+Frontend:** [your-frontend.netlify.app](https://unibotai.netlify.app/)
+**Backend:** [your-backend.onrender.com](https://unibotai-1.onrender.com)
 
 ## Credits
 
