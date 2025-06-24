@@ -79,6 +79,7 @@ university_chatbot/
 ```bash
 git clone https://github.com/charishmag21/university-bot.git
 cd university-bot
+```
 
 ### 2. **Backend Setup (FastAPI)**
 
@@ -109,7 +110,7 @@ uvicorn backend.api:app --reload --port 8000
 - API docs at [http://localhost:8000/docs](http://localhost:8000/docs)
 
 
-## 2. Frontend Setup (React + Vite)
+## 3. Frontend Setup (React + Vite)
 
 ```bash
 cd ../frontend
@@ -119,21 +120,21 @@ npm run dev
 - The app runs at [http://localhost:5173](http://localhost:5173)
 
 
-## 3. Usage
+## 4. Usage
 
 - Open [http://localhost:5173](http://localhost:5173)
 - Type your question about any university (e.g., "What is the tuition fee for MPS Analytics at Northeastern University Toronto?")
 - Wait for the bot to respond with an answer and sources.
 
 
-## 4. Troubleshooting
+## 5. Troubleshooting
 
 - **CORS Error**: Make sure the FastAPI backend allows CORS for the frontend port.
 - **"Failed to fetch response from backend"**: Ensure your backend is running, API keys are valid, and `/ask` endpoint is accessible.
 - **API key errors**: Double-check your `.env` file and API key limits/usage.
 
 
-## 5. Customization & Extending
+## 6. Customization & Extending
 
 - To enable **memory/conversational history**, extend backend API and store the chat session in-memory or in a database.
 - To improve the UI, use component libraries like [shadcn/ui](https://ui.shadcn.com/), [Material-UI](https://mui.com/), or [Chakra UI](https://chakra-ui.com/).
