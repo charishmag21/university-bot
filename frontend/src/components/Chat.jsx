@@ -16,7 +16,7 @@ export default function Chat({ university, campus, sessionId }) {
   const [messages, setMessages] = useState([
     {
       sender: BOT_NAME,
-      text: "Hi! Ask me anything about Canadian universities or colleges. 😊",
+      text: "Hi! Ask me anything about universities or colleges worldwide.😊",
       isBot: true,
     },
   ]);

@@ -24,11 +24,19 @@ export default function PrivacyPolicy() {
       </ul>
       <h3>Your Choices</h3>
       <ul>
-        <li>You can request to access or delete your data by contacting us at <a href="mailto:support@campusai.ca">support@campusai.ca</a>.</li>
+        <li>
+          You can request to access or delete your data by contacting us at{" "}
+          <a href="mailto:contactcampusai@gmail.com">
+            contactcampusai@gmail.com
+          </a>.
+        </li>
       </ul>
       <h3>Contact Us</h3>
       <p>
-        Questions about our privacy policy? Email <a href="mailto:support@campusai.ca">support@campusai.ca</a>.
+        Questions about our privacy policy? Email{" "}
+        <a href="mailto:contactcampusai@gmail.com">
+          contactcampusai@gmail.com
+        </a>.
       </p>
     </div>
   );

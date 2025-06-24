@@ -30,7 +30,10 @@ export default function TermsOfService() {
       </ul>
       <h3>Contact Us</h3>
       <p>
-        Questions? Email <a href="mailto:support@campusai.ca">support@campusai.ca</a>.
+        Questions? Email{" "}
+        <a href="mailto:contactcampusai@gmail.com">
+          contactcampusai@gmail.com
+        </a>.
       </p>
     </div>
   );

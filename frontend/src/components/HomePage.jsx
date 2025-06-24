@@ -8,15 +8,25 @@ const testimonials = [
     role: "Future UofT Student",
   },
   {
-    text: "I loved the instant answers and the scholarship recommendations. Highly recommend for international students!",
-    name: "Zainab",
-    role: "Incoming McGill Student",
+    text: "The AI helped me compare options between London and New York, I never imagined the process could be this simple.",
+    name: "Emily",
+    role: "Incoming LSE Student",
   },
   {
-    text: "The comparison tool is a game changer. I could finally see all my options side by side.",
-    name: "Lucas",
-    role: "Waterloo Engineering Admit",
+    text: "With CampusAI, I found my dream university in Australia and connected with alumni from my country. Highly recommended!",
+    name: "Amit",
+    role: "UNSW Engineering Admit",
   },
+  {
+    text: "I loved the instant answers and the scholarship recommendations. Highly recommend for international students!",
+    name: "Zainab",
+    role: "McGill Student",
+  },
+  {
+    text: "CampusAI's guidance helped me compare top US and German universities at a glance!",
+    name: "Lucas",
+    role: "TU Munich Engineering Admit",
+  }
 ];
 
 // --- SVG Wave as a React Component ---
@@ -82,7 +92,7 @@ export default function HomePage({ onStart }) {
         <div className="hero-bg-wave"></div>
         <h1 className="hero-title">Your Future, Your Campus</h1>
         <p className="homepage-tagline">
-        Chart your path with personalized matches, exclusive insights, and AI-powered answers everything you need to shape your next chapter.
+        Explore your future with personalized university matches, global insights, and instant AI-powered answers,<br />everything you need to start your next chapter, anywhere in the world.
         </p>
         <button className="homepage-start-btn" onClick={onStart}>
           Get Started
@@ -98,15 +108,15 @@ export default function HomePage({ onStart }) {
           <div className="feature-glass-card">
             <div className="feature-title">Smart Campus Match</div>
             <div className="feature-desc">
-              Instantly discover universities that fit your dreams and profile.<br />
-              <span className="feature-sub">Our AI analyzes your preferences, academics, and goals to suggest the best options in Canada.</span>
+              Instantly discover universities and colleges around the world that fit your dreams and profile.<br />
+              <span className="feature-sub">Our AI analyzes your preferences, academics, and goals to suggest the best options worldwide.</span>
             </div>
           </div>
           <div className="feature-glass-card">
             <div className="feature-title">AI Guidance, Anytime</div>
             <div className="feature-desc">
               Get real-time answers on programs, admissions, and campus life.<br />
-              <span className="feature-sub">Ask anything, anytime—our AI advisor is always ready to help.</span>
+              <span className="feature-sub">Ask anything, anytime, our AI advisor is always ready to help.</span>
             </div>
           </div>
           <div className="feature-glass-card">
@@ -134,13 +144,13 @@ export default function HomePage({ onStart }) {
           <div className="howit-glass-card">
             <div className="howit-title">Enter Your Preferences</div>
             <div className="howit-desc">
-              Tell CampusAI your interests, preferred city, program, or budget—just type or pick from suggestions.
+              Tell CampusAI your interests, preferred city, program, or budget, just type or pick from suggestions.
             </div>
           </div>
           <div className="howit-glass-card">
             <div className="howit-title">Chat and Compare</div>
             <div className="howit-desc">
-              Ask questions, compare programs, and explore real student insights—AI gives you everything instantly.
+              Ask questions, compare programs, and explore real student insights, AI gives you everything instantly.
             </div>
           </div>
           <div className="howit-glass-card">
@@ -152,7 +162,7 @@ export default function HomePage({ onStart }) {
           <div className="howit-glass-card">
             <div className="howit-title">Achieve Your Dreams</div>
             <div className="howit-desc">
-                Unlock your future—start your Canadian university journey with confidence, clarity, and support from CampusAI.
+                Unlock your future, start your global university journey with confidence, clarity, and support from CampusAI.
             </div>
             </div>
         </div>
@@ -184,8 +194,12 @@ export default function HomePage({ onStart }) {
         <div className="footer-columns">
           <div>
             <div className="footer-title">Contact</div>
-            <div>support@campusai.ca</div>
-            <div>+1 (555) 123-4567</div>
+            <div>
+              <a href="mailto:contactcampusai@gmail.com" className="footer-email">
+                contactcampusai@gmail.com
+              </a>
+            </div>
+            <div>+1 (416) 289-1444</div>
           </div>
           <div>
             <div className="footer-title">Quick Links</div>
